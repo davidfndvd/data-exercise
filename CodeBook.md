@@ -29,7 +29,7 @@
 
   <meta name="viewport" content="width=device-width">
   
-  <title>Getting-and-Cleaning-Data-Project/README.md at master · linyiru/Getting-and-Cleaning-Data-Project</title>
+  <title>Getting-and-Cleaning-Data-Project/CodeBook.md at master · linyiru/Getting-and-Cleaning-Data-Project</title>
     <meta name="description" content="Contribute to linyiru/Getting-and-Cleaning-Data-Project development by creating an account on GitHub.">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
@@ -39,10 +39,10 @@
     <meta property="og:image" content="https://avatars2.githubusercontent.com/u/8616?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="linyiru/Getting-and-Cleaning-Data-Project" /><meta property="og:url" content="https://github.com/linyiru/Getting-and-Cleaning-Data-Project" /><meta property="og:description" content="Contribute to linyiru/Getting-and-Cleaning-Data-Project development by creating an account on GitHub." />
 
   <link rel="assets" href="https://assets-cdn.github.com/">
-  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MzEzNTY3NjE0OmVkMWE4YzEyOWViNmFjODlkYjJjZTM5ZTZlYjNhYjllOWM1NjQ4M2ViZDg2MDBhMDE3YjYyNDdlYWRiYTVlMTI=--a1bf808e0d81e4c1fa5a0d9555203e0bddb7cf8f">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MzEzNTY3NjE0OmY1ZjgwZTNkYjdhMWM3NDk1YzJkNDE4MDU0NWU5MzNkM2ExZTFiOTkwMGQ3MDU0YjI0NDIzZmE1YjYxODFiZjg=--371e9f9548c987fd72466c0f6c4b81286eaef990">
   <meta name="pjax-timeout" content="1000">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
-  <meta name="request-id" content="D853:4EF8:324BFBC:5022E72:5BB23BDE" data-pjax-transient>
+  <meta name="request-id" content="D853:4EF8:324B19B:502263E:5BB23BD7" data-pjax-transient>
 
 
   
@@ -53,7 +53,7 @@
     <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
     <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
 
-  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="D853:4EF8:324BFBC:5022E72:5BB23BDE" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="42969392" /><meta name="octolytics-actor-login" content="davidfndvd" /><meta name="octolytics-actor-hash" content="2e9553fe531f2cefc8b41517100c5c795a9fc53beb4f9279707020236bf4d1f9" />
+  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="D853:4EF8:324B19B:502263E:5BB23BD7" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="42969392" /><meta name="octolytics-actor-login" content="davidfndvd" /><meta name="octolytics-actor-hash" content="2e9553fe531f2cefc8b41517100c5c795a9fc53beb4f9279707020236bf4d1f9" />
 <meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
 
 
@@ -72,7 +72,7 @@
     <meta name="user-login" content="davidfndvd">
 
       <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="MDFkN2I2MjkzMDg3ODNjM2M3MzdhYTY4NTIyZTdjZjE4NGZmY2I4ODFkN2ZlODNkMWNkYzM4ODlkYWZmYWIzNXx7InJlbW90ZV9hZGRyZXNzIjoiMTg2LjIwNC4yMzEuMTA0IiwicmVxdWVzdF9pZCI6IkQ4NTM6NEVGODozMjRCRkJDOjUwMjJFNzI6NUJCMjNCREUiLCJ0aW1lc3RhbXAiOjE1Mzg0MDc0MTEsImhvc3QiOiJnaXRodWIuY29tIn0=">
+    <meta name="js-proxy-site-detection-payload" content="NDU4ZTRiODEwNWZhZTI1ODljMjM3YmUwNmMyYjBlZWQzYjA0YzkwZGU0MTYwOGI3YjY4OWUyOTY3NjE3ZmJiZXx7InJlbW90ZV9hZGRyZXNzIjoiMTg2LjIwNC4yMzEuMTA0IiwicmVxdWVzdF9pZCI6IkQ4NTM6NEVGODozMjRCMTlCOjUwMjI2M0U6NUJCMjNCRDciLCJ0aW1lc3RhbXAiOjE1Mzg0MDczOTAsImhvc3QiOiJnaXRodWIuY29tIn0=">
 
     <meta name="enabled-features" content="DASHBOARD_V2_LAYOUT_OPT_IN,EXPLORE_DISCOVER_REPOSITORIES,UNIVERSE_BANNER,MARKETPLACE_PLAN_RESTRICTION_EDITOR,MARKETPLACE_RETARGETING,COLLAPSE_REPEATED_COMMENTS">
 
@@ -88,7 +88,7 @@
   <meta name="octolytics-dimension-user_id" content="8616" /><meta name="octolytics-dimension-user_login" content="linyiru" /><meta name="octolytics-dimension-repository_id" content="19198648" /><meta name="octolytics-dimension-repository_nwo" content="linyiru/Getting-and-Cleaning-Data-Project" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="19198648" /><meta name="octolytics-dimension-repository_network_root_nwo" content="linyiru/Getting-and-Cleaning-Data-Project" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
 
 
-    <link rel="canonical" href="https://github.com/linyiru/Getting-and-Cleaning-Data-Project/blob/master/README.md" data-pjax-transient>
+    <link rel="canonical" href="https://github.com/linyiru/Getting-and-Cleaning-Data-Project/blob/master/CodeBook.md" data-pjax-transient>
 
 
   <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
@@ -157,7 +157,7 @@
           autocapitalize="off"
           aria-autocomplete="list"
           aria-controls="jump-to-results"
-          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=ewv+vDpEAM8yry/YOzSS/6penmxXi6+l7H82qf4hGicOn+Zvqegh7yHvgEMpyXVJ6aKqROen8wHXlhSM279bCg=="
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=GfzkJ76xBXtyWlOLiPBysMTCXsS7zk1ODcPkooI3Dk5saPz0LR0kW2Ea/BCaDZUGhz5q7AviEeo2KsaHp6lPYw=="
           spellcheck="false"
           autocomplete="off"
           >
@@ -310,7 +310,7 @@
           <li><a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a></li>
           <li><a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a></li>
           <li>
-            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="OLgnjVu2rr3N4JDgYXfw8nH3D33L3/LA3MzCd437jHU7igDIKaiL2QOdZiNoiZg0gnZ1fzMhUMiIQwRn8vmkPg==" />
+            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="6jBIBKERri0Nwwp81lJe9zK351uDq/kcDiqjPnTssqDpAm9B0w+LScO+/L/frDYxwTadWXtVWxRapWUuC+6a6w==" />
               <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
                 Sign out
               </button>
@@ -323,7 +323,7 @@
 
 
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="sr-only right-0" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="E3TPkWt6bJzKe1M9jwu9UnapJ7RE8IhhJqCiFzm7UmEQRujUGWRJ+AQGpf6G9dWUhShdtrwOKmlyL2QHRrl6Kg==" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="sr-only right-0" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="EjvqNRNLt+yEQSN0WOzoQCDbQUytNoZ8X8g1Ooa57XkRCc1wYVWSiEo81bdREoCG01o7TlXIJHQLR/Mq+bvFMg==" />
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -362,7 +362,7 @@
 
       <ul class="pagehead-actions">
   <li>
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="pUmfFfIEJ8o/I1dGlRzIXHB36+ENtMbG5UrbvYFz2uf+xffEtJAv4/YM2V5e++VOWu+hbBv0wKVcPtdLQmfdRA==" />      <input type="hidden" name="repository_id" id="repository_id" value="19198648" class="form-control" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="m6gHCMWGF5hrZoVypkTrkTWBVF4oxzaND7keCvVC24/AJG/ZgxIfsaJJC2pto8aDHxke0z6HMO62zRL8NlbcLA==" />      <input type="hidden" name="repository_id" id="repository_id" value="19198648" class="form-control" />
 
       <details class="details-reset details-overlay select-menu float-left">
         <summary class="btn btn-sm btn-with-count select-menu-button" data-ga-click="Repository, click Watch settings, action:blob#show">
@@ -425,7 +425,7 @@
   <li>
     
   <div class="js-toggler-container js-social-container starring-container ">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/linyiru/Getting-and-Cleaning-Data-Project/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="MpRSnsULpAGXkUdcfvHedp2sKzJ+2JDuCHrHPEwbqc13gyssJmf/VxlAO6k5TkT2h1BVVm8n6wYjbyUHYrqxlA==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/linyiru/Getting-and-Cleaning-Data-Project/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="7u+42FWReIX9pTXMH6aRr6oKCn95GBFfnBlfFKgF39Gr+MFqtv0j03N0STlYGQsvsPZ0G2jnare3DL0vhqTHiA==" />
       <input type="hidden" name="context" value="repository"></input>
       <button
         type="submit"
@@ -440,7 +440,7 @@
           1
         </a>
 </form>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/linyiru/Getting-and-Cleaning-Data-Project/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="6K3nUv9cZnAKO4M+7+Hm6a4cN/k9MVx/5vbnIH9G6PCH9EyvO06VVT2tGXjob5+eAOycNxKV/V75h5IsGat7YA==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/linyiru/Getting-and-Cleaning-Data-Project/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="ZaNcbapm29KLvxwXA/7IKBncLt/QbWXNcojoIhFyHVAK+veQbnQo97wphlEEcLFftyyFEf/JxOxt+Z0ud5+OwA==" />
       <input type="hidden" name="context" value="repository"></input>
       <button
         type="submit"
@@ -459,7 +459,7 @@
   </li>
 
   <li>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="btn-with-count" action="/linyiru/Getting-and-Cleaning-Data-Project/fork" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="1am+ad54oj/1QOy3xcMqsStuMXEQvU0TPTV6AyKR5PwM6GOG1NFx9FvDlKYmhg2wSAnL3OjseJ/tY4sOZqHBbQ==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="btn-with-count" action="/linyiru/Getting-and-Cleaning-Data-Project/fork" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="+jmrep4OjAbecKBG4QVTIYqcNJNC5Ozqs54pr4rWYQMjeHaVlKdfzXDz2FcCQHQg6fvOPrq12WZjyNiizuZEkg==" />
             <button
                 type="submit"
                 class="btn btn-sm btn-with-count"
@@ -541,9 +541,9 @@
   <div class="repository-content ">
 
     
-  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/linyiru/Getting-and-Cleaning-Data-Project/blob/1d593deea182fce8762ac0f4614f2edc2d6cd67d/README.md">Permalink</a>
+  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/linyiru/Getting-and-Cleaning-Data-Project/blob/1d593deea182fce8762ac0f4614f2edc2d6cd67d/CodeBook.md">Permalink</a>
 
-  <!-- blob contrib key: blob_contributors:v21:ce60fa5d4cc5311468b2cee019c08573 -->
+  <!-- blob contrib key: blob_contributors:v21:e6bcd985155f0fe9b532138cd3c14d9b -->
 
   
 
@@ -587,7 +587,7 @@
 
 
             <a class="select-menu-item js-navigation-item js-navigation-open selected"
-               href="/linyiru/Getting-and-Cleaning-Data-Project/blob/master/README.md"
+               href="/linyiru/Getting-and-Cleaning-Data-Project/blob/master/CodeBook.md"
                data-name="master"
                data-skip-pjax="true"
                rel="nofollow">
@@ -626,7 +626,7 @@
       </clipboard-copy>
     </div>
     <div id="blob-path" class="breadcrumb">
-      <span class="repo-root js-repo-root"><span class="js-path-segment"><a data-pjax="true" href="/linyiru/Getting-and-Cleaning-Data-Project"><span>Getting-and-Cleaning-Data-Project</span></a></span></span><span class="separator">/</span><strong class="final-path">README.md</strong>
+      <span class="repo-root js-repo-root"><span class="js-path-segment"><a data-pjax="true" href="/linyiru/Getting-and-Cleaning-Data-Project"><span>Getting-and-Cleaning-Data-Project</span></a></span></span><span class="separator">/</span><strong class="final-path">CodeBook.md</strong>
     </div>
   </div>
 
@@ -634,15 +634,15 @@
   
   <div class="commit-tease">
       <span class="float-right">
-        <a class="commit-tease-sha" href="/linyiru/Getting-and-Cleaning-Data-Project/commit/274b84ad565354e158730bf277ab3675344a12a9" data-pjax>
-          274b84a
+        <a class="commit-tease-sha" href="/linyiru/Getting-and-Cleaning-Data-Project/commit/1d593deea182fce8762ac0f4614f2edc2d6cd67d" data-pjax>
+          1d593de
         </a>
-        <relative-time datetime="2014-05-25T18:10:36Z">May 25, 2014</relative-time>
+        <relative-time datetime="2014-05-25T18:22:00Z">May 25, 2014</relative-time>
       </span>
       <div>
         <a rel="author" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=8616" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/linyiru"><img class="avatar" src="https://avatars2.githubusercontent.com/u/8616?s=40&amp;v=4" width="20" height="20" alt="@linyiru" /></a>
         <a class="user-mention" rel="author" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=8616" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/linyiru">linyiru</a>
-          <a data-pjax="true" title="updated." class="message" href="/linyiru/Getting-and-Cleaning-Data-Project/commit/274b84ad565354e158730bf277ab3675344a12a9">updated.</a>
+          <a data-pjax="true" title="CodeBook.md added." class="message" href="/linyiru/Getting-and-Cleaning-Data-Project/commit/1d593deea182fce8762ac0f4614f2edc2d6cd67d">CodeBook.md added.</a>
       </div>
 
     <div class="commit-tease-contributors">
@@ -681,9 +681,9 @@
   <div class="file-actions">
 
     <div class="BtnGroup">
-      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/linyiru/Getting-and-Cleaning-Data-Project/raw/master/README.md">Raw</a>
-        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/linyiru/Getting-and-Cleaning-Data-Project/blame/master/README.md">Blame</a>
-      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/linyiru/Getting-and-Cleaning-Data-Project/commits/master/README.md">History</a>
+      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/linyiru/Getting-and-Cleaning-Data-Project/raw/master/CodeBook.md">Raw</a>
+        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/linyiru/Getting-and-Cleaning-Data-Project/blame/master/CodeBook.md">Blame</a>
+      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/linyiru/Getting-and-Cleaning-Data-Project/commits/master/CodeBook.md">History</a>
     </div>
 
         <a class="btn-octicon tooltipped tooltipped-nw"
@@ -693,13 +693,13 @@
             <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
         </a>
 
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/linyiru/Getting-and-Cleaning-Data-Project/edit/master/README.md" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="8gBGRqaNNTI0tZeFP94yOEMgBaT/4+yczjwz+aCTVbbXax0rT4KwwdRP9Pje2i/FfqtVB3rxFf52TGRLDzC0lg==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/linyiru/Getting-and-Cleaning-Data-Project/edit/master/CodeBook.md" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="NksdX4qC8mlbI2uMAcd6Qev4Y3D1UWc1lcQThXPfNgf/hfNGndplhN9mMGzmNBxh5hRu/nkRKdYmZnAEEwYw5w==" />
             <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
               aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with>
               <svg class="octicon octicon-pencil" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
             </button>
 </form>
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/linyiru/Getting-and-Cleaning-Data-Project/delete/master/README.md" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="agaopv67DyvK2kxXrqeGuphweq0W/jnmUP5U9sgqFNyUza1fKyOKcKSqAIW3xAxtObBfLJUZjiRaI6W6yzIVFw==" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/linyiru/Getting-and-Cleaning-Data-Project/delete/master/CodeBook.md" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="9SbE2JHYqw9vrkj99Yw1pb4VXDW2SSv/eO7y/Ubrca/Gu0tEN7g4mWrPThQCf17TplwL+ZBpGX5Z/GVimilVlQ==" />
           <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
             aria-label="Fork this project and delete the file" data-disable-with>
             <svg class="octicon octicon-trashcan" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
@@ -707,17 +707,69 @@
 </form>  </div>
 
   <div class="file-info">
-      22 lines (14 sloc)
+      65 lines (37 sloc)
       <span class="file-info-divider"></span>
-    1.1 KB
+    3.68 KB
   </div>
 </div>
 
     
   <div id="readme" class="readme blob instapaper_body">
-    <article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-getting-and-cleaning-data" class="anchor" aria-hidden="true" href="#getting-and-cleaning-data"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Getting and Cleaning Data</h1>
-<h2><a id="user-content-course-project" class="anchor" aria-hidden="true" href="#course-project"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Course Project</h2>
-<p>You should create one R script called run_analysis.R that does the following.</p>
+    <article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-codebook" class="anchor" aria-hidden="true" href="#codebook"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CodeBook</h1>
+<p>This is a code book that describes the variables, the data, and any transformations or work that you performed to clean up the data.</p>
+<h2><a id="user-content-the-data-source" class="anchor" aria-hidden="true" href="#the-data-source"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>The data source</h2>
+<ul>
+<li>Original data: <a href="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip" rel="nofollow">https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip</a></li>
+<li>Original description of the dataset: <a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones" rel="nofollow">http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones</a></li>
+</ul>
+<h2><a id="user-content-data-set-information" class="anchor" aria-hidden="true" href="#data-set-information"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Data Set Information</h2>
+<p>The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.</p>
+<p>The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.</p>
+<h2><a id="user-content-the-data" class="anchor" aria-hidden="true" href="#the-data"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>The data</h2>
+<p>The dataset includes the following files:</p>
+<ul>
+<li>
+<p>'README.txt'</p>
+</li>
+<li>
+<p>'features_info.txt': Shows information about the variables used on the feature vector.</p>
+</li>
+<li>
+<p>'features.txt': List of all features.</p>
+</li>
+<li>
+<p>'activity_labels.txt': Links the class labels with their activity name.</p>
+</li>
+<li>
+<p>'train/X_train.txt': Training set.</p>
+</li>
+<li>
+<p>'train/y_train.txt': Training labels.</p>
+</li>
+<li>
+<p>'test/X_test.txt': Test set.</p>
+</li>
+<li>
+<p>'test/y_test.txt': Test labels.</p>
+</li>
+</ul>
+<p>The following files are available for the train and test data. Their descriptions are equivalent.</p>
+<ul>
+<li>
+<p>'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.</p>
+</li>
+<li>
+<p>'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis.</p>
+</li>
+<li>
+<p>'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration.</p>
+</li>
+<li>
+<p>'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.</p>
+</li>
+</ul>
+<h2><a id="user-content-transformation-details" class="anchor" aria-hidden="true" href="#transformation-details"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Transformation details</h2>
+<p>There are 5 parts:</p>
 <ol>
 <li>Merges the training and the test sets to create one data set.</li>
 <li>Extracts only the measurements on the mean and standard deviation for each measurement.</li>
@@ -725,14 +777,15 @@
 <li>Appropriately labels the data set with descriptive activity names.</li>
 <li>Creates a second, independent tidy data set with the average of each variable for each activity and each subject.</li>
 </ol>
-<h2><a id="user-content-steps-to-work-on-this-course-project" class="anchor" aria-hidden="true" href="#steps-to-work-on-this-course-project"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Steps to work on this course project</h2>
-<ol>
-<li>Download the data source and put into a folder on your local drive. You'll have a <code>UCI HAR Dataset</code> folder.</li>
-<li>Put <code>run_analysis.R</code> in the parent folder of <code>UCI HAR Dataset</code>, then set it as your working directory using <code>setwd()</code> function in RStudio.</li>
-<li>Run <code>source("run_analysis.R")</code>, then it will generate a new file <code>tiny_data.txt</code> in your working directory.</li>
-</ol>
-<h2><a id="user-content-dependencies" class="anchor" aria-hidden="true" href="#dependencies"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dependencies</h2>
-<p><code>run_analysis.R</code> file will help you to install the dependencies automatically. It depends on <code>reshape2</code> and <code>data.table</code>.</p>
+<h2><a id="user-content-how-run_analysisr-implements-the-above-steps" class="anchor" aria-hidden="true" href="#how-run_analysisr-implements-the-above-steps"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>How <code>run_analysis.R</code> implements the above steps:</h2>
+<ul>
+<li>Require <code>reshapre2</code> and <code>data.table</code> librareis.</li>
+<li>Load both test and train data</li>
+<li>Load the features and activity labels.</li>
+<li>Extract the mean and standard deviation column names and data.</li>
+<li>Process the data. There are two parts processing test and train data respectively.</li>
+<li>Merge data set.</li>
+</ul>
 </article>
   </div>
 
@@ -761,7 +814,7 @@
 <div class="footer container-lg px-3" role="contentinfo">
   <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
     <ul class="list-style-none d-flex flex-wrap ">
-      <li class="mr-3">&copy; 2018 <span title="0.27307s from unicorn-5856f96dd6-wp44c">GitHub</span>, Inc.</li>
+      <li class="mr-3">&copy; 2018 <span title="0.29360s from unicorn-58c9f5c9f-8pnt7">GitHub</span>, Inc.</li>
         <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
         <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
         <li class="mr-3"><a href="https://help.github.com/articles/github-security/" data-ga-click="Footer, go to security, text:security">Security</a></li>
